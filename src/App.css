@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(6, 40px);
+  grid-template-areas: 
+  "display display display dipslay"
+  "clear answer divide mul"
+  "seven eight nine substract"
+  "four five six plus"
+  "one two three equals"
+  "zer zer dec equals"
+  ;
+}
+
+#display {
+  grid-area: display;
+  text-align: right;
+  align-items: center;
+  width: calc(60px * 4);
+  padding-top: 12px;
+  padding-right: 10px;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#answer {
+  grid-area: answer;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: mul;
+}
+
+#add {
+  grid-area: plus;
+}
+
+#subtract {
+  grid-area: substract;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#six {
+  grid-area: six;
+}
+
+#five {
+  grid-area: five;
+}
+
+#four {
+  grid-area: four;
+}
+
+#three {
+  grid-area: three;
+}
+
+#two {
+  grid-area: two;
+}
+
+#one {
+  grid-area: one;
+}
+
+#zero {
+  grid-area: zer;
+}
+
+#decimal {
+  grid-area: dec;
+}
+
+#equals {
+  grid-area: equals;
+}
